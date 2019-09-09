@@ -1,0 +1,90 @@
+
+
+ #scroll-fader-left {
+	width: 25px;
+	position:absolute;
+	height:100%;
+	    pointer-events: none;
+	left:0;
+	z-index:2;
+	
+-webkit-box-shadow: inset 13px 0px 22px -2px rgba(250,250,250,0.45);
+-moz-box-shadow: inset 13px 0px 22px -2px rgba(250,250,250,0.45);
+box-shadow: inset 13px 0px 22px -2px rgba(250,250,250,0.45);
+	
+}
+
+
+#scroll-fader-right {
+	width: 25px;
+	position:absolute;
+	height:100%;
+	    pointer-events: none;
+		right:0;
+	z-index:2;
+	
+-webkit-box-shadow: inset -13px 0px 22px -2px rgba(250,250,250,0.45);
+-moz-box-shadow: inset -13px 0px 22px -2px rgba(250,250,250,0.45);
+box-shadow:	inset -13px 0px 22px -2px rgba(250,250,250,0.45);
+	
+}
+
+
+    #scroll-group::before,
+    #scroll-group::after {
+        content: "";
+        position: absolute;
+        height: 100%;
+        width: 60px;
+        z-index: 10;
+    }
+    #scroll-group::before {
+        left: 0;
+        background: linear-gradient(to right, #fff, transparent);
+    }
+    #scroll-group::after {
+        right: 0;
+        background: linear-gradient(to right, transparent, #fff);
+    }
+
+
+
+
+#scroll-group {
+		width: 100%;
+		overflow: hidden;
+		height: 150px;
+		position: relative;
+		white-space: nowrap;
+}
+#scroll, #scroll2  {
+	height: auto;
+	display: inline-block;
+	max-width: 9999999999px;
+	position: absolute;
+	transition: all;
+	/* float: left; */
+	width: auto!important;
+}
+
+#scroll .news-item, #scroll2 .news-item {
+	display: inline-block;
+	margin-right: 45px;
+	/* float: left; */
+}
+
+#scroll .news-item a, #scroll2 .news-item a {
+	color: #ffac1c;
+	/* float:left; */
+}
+
+
+
+#scroll .news-item img, #scroll2 .news-item img {
+		height: 150px;
+}
+
+
+span.news-item-date{
+	/* float:left; */
+}
