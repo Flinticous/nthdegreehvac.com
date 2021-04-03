@@ -119,6 +119,29 @@ a:hover{
   border-left-color: #3498db;
 }
 
+#breadcrumb li a:hover {
+    background: #2974a7;
+}
+
+#breadcrumb li ahover:before, #breadcrumb li a:hover:after {
+    border: 0 solid #276d9c;
+    border-width: 20px 10px;
+    border-color: transparent;
+    border-left-color: #2974a7;
+}
+
+#breadcrumb li a:hover:before {
+    left: -20px;
+    border-left-color: transparent;
+}
+
+#breadcrumb li a:hover:before {
+    border: 0 solid #2974a7;
+    border-width: 20px 10px;
+    left: -20px;
+    border-left-color: transparent;
+}
+
 
 .contact-wrap {
   background-color: #1474c8;
