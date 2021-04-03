@@ -145,11 +145,6 @@ button, input, select, textarea {
     text-decoration: none;
 }
 
-.login-container {
-  text-align: right;
-  margin: 20px;
-}
-
 .footer {
   position: relative;
   margin-top: -60px; /* negative value of footer height */
